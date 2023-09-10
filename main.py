@@ -27,7 +27,8 @@ def data_analysis(df):
     # Implement regression algorithm to predict property prices
 
     # Fit the model to the data
-    X = df[['Feature1', 'Feature2', ...]]  # Replace 'Feature1', 'Feature2', ... with relevant features
+    # Replace 'Feature1', 'Feature2', ... with relevant features
+    X = df[['Feature1', 'Feature2', ...]]
     y = df['Price']  # Replace 'Price' with the target variable
     model = LinearRegression()
     model.fit(X, y)
@@ -103,7 +104,8 @@ def run_real_estate_advisor():
     # Step 4: Optimize investment portfolios based on risk preferences and financial constraints
     risk_preferences = [...]  # Specify risk preferences
     financial_constraints = [...]  # Specify financial constraints
-    optimized_portfolios = portfolio_optimization(real_estate_data, risk_preferences, financial_constraints)
+    optimized_portfolios = portfolio_optimization(
+        real_estate_data, risk_preferences, financial_constraints)
 
     # Step 5: Visualize data and provide interactive visualizations
     visualize_data(real_estate_data, clusters)
